@@ -1,0 +1,166 @@
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 48px 0; */
+    padding-bottom: 48px;
+    border-bottom: 1px solid #E7E7E7;
+    margin-bottom: 48px;
+}
+
+.cart-item .book-image {
+    height: 192px;
+    width: 256px;
+    margin-bottom: 0;
+    margin-right: 32px;
+}
+
+.cart-item .book-image > img {
+    max-height: 170px;
+}
+
+.cart-item .book-info-container {
+    width: 600px
+}
+
+.cart-item .book-title {
+    height: auto;
+}
+
+.cart-item .book-price {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.remove {
+    width: 24px;
+    height: 24px;
+    background-image: url('/public/img/Cancel.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 113px;
+}
+
+.check-out-container {
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 48px;
+}
+
+.check-out-container > div {
+    width: 256px;
+}
+
+.check-out-container .total-price {
+    font-family: 'Bebas Neue';
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.check-out {
+    width: 100%;
+}
+
+.decrease, .increase {
+    width: 56px;
+    height: 56px;
+    background-size: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.decrease {
+    background-image: url('/public/img/Minus.png');
+}
+
+.increase {
+    background-image: url('/public/img/Plus.png');
+}
+
+.book-info-container .controls {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.book-info-container .controls > span {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    font-family: 'Bebas Neue';
+    padding: 12px 23px;
+}
+
+@media (max-width: 1000px) {
+    .cart-item {
+        position: relative;
+    }
+
+    .cart-item .book-price {
+        position: absolute;
+        bottom: 48px;
+        right: 0;
+    }
+
+    .remove {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .cart-item {
+        flex-direction: column;
+        margin-bottom: 36px;
+        padding-bottom: 36px;
+    }
+
+    .cart-item .book-price {
+        position: absolute;
+        bottom: 44px;
+        right: 0;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .cart-item .book-info-container {
+        width: 100%;
+    }
+
+    .cart-item .book-image {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .remove {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url('/public/img/close_black.png');
+        width: 56px;
+        height: 56px;
+    }
+
+    .check-out-container {
+        width: 100%;
+        margin-bottom: 56px;
+        display: block;
+        /* justify-content: flex-end; */
+        margin-top: 36px;
+    }
+
+    .check-out-container .total-price {
+        width: 100%;
+    }
+
+    .check-out-container > div {
+        width: 100%;
+    }
+}
