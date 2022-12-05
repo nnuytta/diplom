@@ -1,0 +1,59 @@
+.book {
+    flex: 0 1 calc(100% / 3 - 16px);
+    margin-bottom: 49px;
+    cursor: pointer;
+}
+
+.book:hover .book-image {
+    background-color: #F4EEFD;
+}
+
+.book-image {
+    background-color: #D7E4FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 256px;
+    margin-bottom: 20px;
+}
+
+.book-image img {
+    max-height: 240px;
+}
+
+.book-title {
+    font-size: 24px;
+    line-height: 32px;
+    height: 64px;
+    margin-bottom: 8px;
+    color: #313037;
+    font-family: 'Bebas Neue';
+    overflow: hidden;
+}
+
+.book-short-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #A8A8A8;
+    height: 48px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.book-short-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .book {
+        flex: 0 1 calc(100% / 2 - 16px);
+    }
+}
+
+@media (max-width: 530px) {
+    .book {
+        flex: 0 1 100%;
+    }
+}

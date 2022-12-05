@@ -1,0 +1,87 @@
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 49px;
+    border-top: 1px solid #E7E7E7;
+    margin-bottom: 72px;
+}
+
+.page-nav * {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.page-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-controls > div {
+    margin-left: 32px;
+}
+
+.page-controls > div:first-child {
+    margin-left: 0;
+}
+
+.page-nav-button {
+    cursor: pointer;
+}
+
+.page-nav-button:disabled {
+    color: #A8A8A8;
+}
+
+.page-nav-button.forward::after, .page-nav-button.back::before {
+    content: '';
+    display: inline-block;
+    background-image: url('/public/img/arrow.png');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-size: 100%;
+    vertical-align: bottom;
+}
+
+.page-nav-button.forward::after {
+    margin-left: 8px;
+}
+
+.page-nav-button.back::before {
+    margin-right: 8px;
+    transform: rotate(180deg);
+}
+
+.page-controls > div {
+    color: #A8A8A8;
+    cursor: pointer;
+}
+
+.current-page {
+    color: #313037 !important;
+}
+
+.dots {
+    cursor: auto !important;
+}
+
+@media (max-width: 500px) {
+    .page-nav-button, .page-nav-button:disabled {
+        color: #FFF;
+    }
+
+    .page-controls > div {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .page-controls > div {
+        margin-left: 10px;
+    }
+}

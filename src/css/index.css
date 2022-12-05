@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 320px;
+}
+
+/* html {
+    overflow: scroll;
+}  */
+
+body {
+    color: #313037;
+    font-family: 'Nanum Gothic';
+    position: relative;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    min-height: calc(100vh - 220px);
+}
+
+.input {
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.input:focus {
+    background-color: #F7F7F7;
+}
+
+.back-button {
+    display: block;
+    width: 42px;
+    height: 14px;
+    background-image: url('/public/img/back.png');
+    background-size: 100%;
+    background-position: center center;
+    margin-bottom: 37px;
+}
+
+.button {
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFF;
+    background-color: #313037;
+    cursor: pointer;
+    font-family: 'Bebas Neue';
+    width: 288px;
+    height: 56px;
+}
+
+.button:active {
+    background-color: #5B5A62;
+}
+
+@media (max-width: 1980px) {
+    body {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1980px) {
+    body {
+        padding: 0 24px;
+    }
+}
